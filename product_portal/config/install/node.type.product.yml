@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - product_portal
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: L8cGakif7b9Kl6ysjcWNn3472sSL_cXF8D3uhtCLACk
+name: Product
+type: product
+description: 'A content type to create product for "Jugaad Patches Pvt Ltd".'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

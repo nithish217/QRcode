@@ -1,0 +1,5 @@
+name: 'Product Portal'
+type: module
+description: 'A module to display products with QR Code'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

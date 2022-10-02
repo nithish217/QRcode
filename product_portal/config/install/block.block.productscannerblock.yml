@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - product_portal
+    - system
+  theme:
+    - olivero
+id: productscannerblock
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: productscanner_block
+settings:
+  id: productscanner_block
+  label: 'ProductScanner block'
+  label_display: '0'
+  provider: product_portal
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/*\r\n/user/*"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product: product
