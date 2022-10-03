@@ -6,16 +6,12 @@ dependencies:
     - node.type.product
   module:
     - image
-    - product_portal
-  enforced:
-    module:
-      - product_portal
 id: node.product.field_image
 field_name: field_image
 entity_type: node
 bundle: product
 label: Image
-description: 'This field is to upload a product image'
+description: ''
 required: false
 translatable: true
 default_value: {  }

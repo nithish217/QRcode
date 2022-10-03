@@ -6,15 +6,11 @@ dependencies:
     - node.type.product
   module:
     - text
-    - product_portal
-  enforced:
-    module:
-      - product_portal
 id: node.product.body
 field_name: body
 entity_type: node
 bundle: product
-label: Product Description
+label: 'Product Description'
 description: ''
 required: false
 translatable: true

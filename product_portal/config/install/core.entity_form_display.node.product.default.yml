@@ -4,19 +4,13 @@ dependencies:
   config:
     - field.field.node.product.body
     - field.field.node.product.field_image
-    - field.field.node.product.field_product_app_link
+    - field.field.node.product.field_product_link
     - image.style.thumbnail
     - node.type.product
   module:
     - image
-    - link
     - path
     - text
-  enforced:
-    module:
-      - product_portal
-_core:
-  default_config_hash: hunWNTzuvm26aG8YUcourX6aZ3Nwxhql9iVbIt0smLk
 id: node.product.default
 targetEntityType: node
 bundle: product
@@ -46,13 +40,13 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_product_app_link:
-    type: link_default
+  field_product_link:
+    type: string_textfield
     weight: 3
     region: content
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

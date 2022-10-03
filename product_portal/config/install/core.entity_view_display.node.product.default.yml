@@ -4,17 +4,15 @@ dependencies:
   config:
     - field.field.node.product.body
     - field.field.node.product.field_image
-    - field.field.node.product.field_product_app_link
+    - field.field.node.product.field_product_link
+    - image.style.medium
     - node.type.product
   module:
     - image
     - text
     - user
-  enforced:
-    module:
-      - product_portal
 _core:
-  default_config_hash: AfyQjzHCFVMTUUZ2mD3tLFTWrgrvMbUXj5hQwvokO6U
+  default_config_hash: HB6djRvcsP2hXkHp2EqkkvUgW98QK6vJg-0O4BYLr1I
 id: node.product.default
 targetEntityType: node
 bundle: product
@@ -32,7 +30,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -44,4 +42,4 @@ content:
     weight: 0
     region: content
 hidden:
-  field_product_app_link: true
+  field_product_link: true

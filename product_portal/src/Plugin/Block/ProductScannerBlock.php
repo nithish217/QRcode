@@ -41,7 +41,7 @@ class ProductScannerBlock extends BlockBase {
     //Get current node object
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node instanceof \Drupal\node\NodeInterface) {
-      $product_link = $node->field_product_app_link->getValue()[0]['uri'];
+      $product_link = $node->field_product_link->getValue()[0]['value'];
       // calculate $qr_image with $node
       $build = [
         '#markup' => $qr_image,
